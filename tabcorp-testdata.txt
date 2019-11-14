@@ -1,0 +1,64 @@
+{
+	"eventName": "session",
+	"eventType": "start",
+	"eventIndex": 1,
+	"eventTime": "2019-11-14T03:37:13.933Z",
+	"sessionId": "abc-3b52-406c-96bc-f9de31c4bbc5",
+	"leg": "1",
+	"callflowName": "se",
+	"connectId": "91e29a27-e58c-46f6-8fa7-f9de1a2a0ae7",
+	"recordingPath": "https://recordings.s3-us-west-2.amazonaws.com/2019/10/16/14/dda851e5-3b52-406c-96bc-f9de31c4bbc5/call001.wav",
+	"cli": "091234567",
+	"did": "02198765432",
+	"ctiIn": "{\"key1\":\"value1\",\"key2\":\"value2\"}",
+	"ctiId": "53897y4uthgdg1y8943qg3juih89",
+        "guid": "1"
+}
+
+{
+	"eventName": "auth",
+	"eventType": "end",
+	"eventIndex": 25,
+	"eventTime": "2019-11-14T03:37:16.506Z",
+	"sessionId": "abc-3b52-406c-96bc-f9de31c4bbc5",
+	"leg": "1",
+	"callflowName": "se",
+	"connectId": "91e29a27-e58c-46f6-8fa7-f9de1a2a0ae7",
+	"accountNumber": "818329",
+	"accountBalance": "993939.58",
+	"accountJurisdiction": "NSW",
+	"startEventIndex": "6",
+	"durationMs": "2569",
+	"guid": "2"
+}
+
+{
+	"eventName": "cti",
+	"eventType": "end",
+	"eventIndex": 2,
+	"eventTime": "2019-11-14T03:37:17.553Z",
+	"sessionId": "abc-3b52-406c-96bc-f9de31c4bbc5",
+	"leg": "2",
+	"callflowName": "se",	
+	"connectId": "91e29a27-e58c-46f6-8fa7-f9de1a2a0ae7",
+	"purecloudId": "38957ty89yw438t7429tw98yt",
+	"endReason": "Ok",
+	"guid": "3"
+}
+
+{
+	"eventName": "conversationRequest",
+	"eventType": "end",
+	"eventIndex": 48,
+	"eventTime": "2019-11-14T03:37:17.071Z",
+	"sessionId": "abc-3b52-406c-96bc-f9de31c4bbc5",
+	"leg": "1",
+	"callflowName": "se",
+	"connectId": "91e29a27-e58c-46f6-8fa7-f9de1a2a0ae7",
+	"responseType": "ask",
+	"responsePrompts": "[ The bet is  wyong racing  trifecta race 1 number 1 the standout from numbers 4 and 5 at $0.50 total cost is $2.00 . Is that right?]",
+	"endReason": "Ok",
+	"startEventIndex": "33",
+	"durationMs": "548",
+	"guid": "4"
+}
