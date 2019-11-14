@@ -68,7 +68,7 @@ exports.handler = (event, context, callback) => {
 			        console.log(JSON.stringify(err, null, 2));
 			    else {
 			        console.log(JSON.stringify(data, null, 2));
-			        record.startDateTime.S = data.Items[0].startDateTime;
+			        record.startDateTime = data.Items[0].startDateTime;
 			        console.log("myStartDateTime : ", data.Items[0]);
 			        console.log("myStartDateTime : ", data.Items[0].startDateTime);
 
@@ -79,7 +79,7 @@ exports.handler = (event, context, callback) => {
 					 ":j": { S: record.accountJurisdiction.S }
 					},
 					Key: { sessionId : { S: record.sessionId.S },
-					 startDateTime : { S: record.startDateTime.S}},
+					 startDateTime : { S: record.startDateTime}},
 					ReturnValues: "NONE",
 					TableName: targetTable
 				    };
@@ -115,7 +115,7 @@ exports.handler = (event, context, callback) => {
 			        console.log(JSON.stringify(err, null, 2));
 			    else {
 			        console.log(JSON.stringify(data, null, 2));
-			        record.startDateTime.S = data.Items[0].startDateTime;
+			        record.startDateTime = data.Items[0].startDateTime;
 			        console.log("myStartDateTime : ", data.Items[0]);
 			        console.log("myStartDateTime : ", data.Items[0].startDateTime);
 
@@ -125,7 +125,7 @@ exports.handler = (event, context, callback) => {
 					 ":p": { S: record.purecloudId.S}
 					},
 					Key: { sessionId : { S: record.sessionId.S },
-					 startDateTime : { S: record.startDateTime.S}},
+					 startDateTime : { S: record.startDateTime}},
 					ReturnValues: "NONE",
 					TableName: targetTable
 				    };
@@ -161,7 +161,7 @@ exports.handler = (event, context, callback) => {
 			        console.log(JSON.stringify(err, null, 2));
 			    else {
 			        console.log(JSON.stringify(data, null, 2));
-			        record.startDateTime.S = data.Items[0].startDateTime;
+			        record.startDateTime = data.Items[0].startDateTime;
 			        console.log("myStartDateTime : ", data.Items[0]);
 			        console.log("myStartDateTime : ", data.Items[0].startDateTime);
 
@@ -171,7 +171,7 @@ exports.handler = (event, context, callback) => {
 					 ":r": { S: record.endReason.S}
 					},
 					Key: { sessionId : { S: record.sessionId.S },
-					 startDateTime : { S: record.startDateTime.S}},
+					 startDateTime : { S: record.startDateTime}},
 					ReturnValues: "NONE",
 					TableName: targetTable
 				    };
